@@ -1,15 +1,21 @@
 {
-  "name": "js",
+  "name": "devcamper",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Devcamper backend API",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main.js"
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
   },
-  "author": "",
+  "author": "Levi Rosario",
   "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
   "devDependencies": {
+    "i": "^0.3.6",
     "nodemon": "^2.0.7"
   }
 }
